@@ -1,7 +1,8 @@
 module.exports = {
     root: true,
-    parser: 'babel-eslint',
+    parser: 'vue-eslint-parser',
     parserOptions: {
+        ecmaVersion: 8,
         sourceType: 'module'
     },
     env: {
@@ -11,7 +12,9 @@ module.exports = {
     extends: 'eslint:recommended',
     // required to lint *.vue files
     plugins: [
-        'html'
+        'flowtype',
+        'html',
+        'vue'
     ],
     // check if imports actually resolve
     'settings': {
@@ -189,7 +192,7 @@ module.exports = {
         'keyword-spacing': 'error',
 
         // enforce consistent linebreak style
-        'linebreak-style': 'error',
+        'linebreak-style': 0,
 
         // require or disallow newlines around directives
         'lines-around-directive': 'error',

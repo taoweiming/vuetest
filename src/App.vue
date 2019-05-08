@@ -1,9 +1,8 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <img src="./assets/logo.png"/>
     <h1>{{ msg }}</h1>
     <firstcomponent></firstcomponent>
-    <!-- <secondcomponent></secondcomponent> -->
     <ul>
       <li><router-link to="/first">第一</router-link></li>
       <li><router-link to="/second">第二</router-link></li>
